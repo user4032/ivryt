@@ -1,48 +1,35 @@
 <!doctype html>
 <html lang="en">
 <head>
-<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#080808"><meta name="description" content="Ivrit Studio — write and run code in Hebrew, right to left."><title>Ivrit Studio — Code in Hebrew.</title>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#080808"><meta name="description" content="Ivrit Studio — write and run code in Hebrew, right to left."><title>Ivrit Studio — Code in Hebrew | Home</title>
 <link rel="icon" href="assets/favicon.png"><link rel="stylesheet" href="style.css">
 </head>
 <body>
 <div class="grain" aria-hidden="true"></div>
 <header class="navbar" id="top">
   <a class="brand" href="#top" aria-label="Ivrit Studio home"><img src="assets/ivrit-mark.png" alt="" class="brand-icon"><span>IVRIT<span class="brand-thin">/</span>STUDIO</span></a>
-  <nav class="desktop-nav" aria-label="Main navigation"><a href="#concept">THE CONCEPT</a><a href="#studio">THE EDITOR</a><a href="#features">FEATURES</a><a href="#about">ABOUT</a></nav>
-  <a href="#studio" class="nav-cta">OPEN STUDIO <span>↗</span></a>
+  <nav class="desktop-nav" aria-label="Main navigation"><a href="#concept">THE CONCEPT</a><a href="studio.html">THE EDITOR</a><a href="learn.html">ACADEMY</a><a href="docs.html">DOCS</a><a href="#features">FEATURES</a><a href="#about">ABOUT</a></nav>
+  <a href="studio.html" class="nav-cta">OPEN STUDIO <span>↗</span></a>
   <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
 </header>
-<nav class="mobile-nav" id="mobileNav" hidden><a href="#concept">THE CONCEPT</a><a href="#studio">THE EDITOR</a><a href="#features">FEATURES</a><a href="#about">ABOUT</a></nav>
+<nav class="mobile-nav" id="mobileNav" hidden><a href="#concept">THE CONCEPT</a><a href="studio.html">THE EDITOR</a><a href="learn.html">ACADEMY</a><a href="docs.html">DOCS</a><a href="#features">FEATURES</a><a href="#about">ABOUT</a></nav>
 <main>
  <section class="hero" id="concept">
   <div class="hero-topline"><span>INDEPENDENT EXPERIMENT / 001</span><span>PROGRAMMING, REWRITTEN.</span></div>
   <div class="hero-columns">
-   <div class="hero-copy"><div class="eyebrow"><span class="eyebrow-line"></span> NOT ANOTHER PROGRAMMING LANGUAGE</div><h1>CODE<br><em>IN</em> HEBREW<span class="period">.</span></h1><p>Everything begins from the other side.<br>Write it. Read it. Run it. Right to left.</p><div class="hero-actions"><a class="action-white" href="#studio">START CODING <span>↗</span></a><a class="action-ghost" href="#features">DISCOVER <span>↓</span></a></div></div>
+   <div class="hero-copy"><div class="eyebrow"><span class="eyebrow-line"></span> NOT ANOTHER PROGRAMMING LANGUAGE</div><h1>CODE<br><em>IN</em> HEBREW<span class="period">.</span></h1><p>Everything begins from the other side.<br>Write it. Read it. Run it. Right to left.</p><div class="hero-actions"><a class="action-white" href="studio.html">START CODING <span>↗</span></a><a class="action-ghost" href="#features">DISCOVER <span>↓</span></a></div></div>
    <div class="hero-art" aria-label="Ivrit brand artwork"><div class="orbit orbit-one"></div><div class="orbit orbit-two"></div><div class="art-grid"></div><div class="symbol-card"><img src="assets/ivrit-mark.png" alt="Ivrit Studio geometric Hebrew Aleph coding logo"></div><div class="art-side-label">א · 001 — NEW DIRECTION</div><div class="art-bottom">DESIGNED FOR A DIFFERENT WAY OF THINKING</div></div>
   </div>
   <div class="hero-footer"><span>SCROLL TO EXPLORE <span class="down-arrow">↓</span></span><span class="hebrew-subtitle" lang="he" dir="rtl">שפת תכנות בעברית</span><span>01 — 04</span></div>
  </section>
  <div class="ticker" aria-hidden="true"><div class="ticker-track">RIGHT TO LEFT <span>✳</span> CODE WITHOUT BORDERS <span>✳</span> עברית <span>✳</span> RIGHT TO LEFT <span>✳</span> CODE WITHOUT BORDERS <span>✳</span> עברית <span>✳</span>&nbsp;</div></div>
- <section class="statement wrap"><div class="section-meta"><span>01 / A NEW LANGUAGE</span><span>THE IDEA</span></div><div class="statement-body"><div class="big-aleph" aria-hidden="true">א</div><div><h2>GOOD IDEAS<br>DON'T ALWAYS<br><span>READ LEFT TO RIGHT.</span></h2><p>Ivrit is an experimental programming language with Hebrew keywords and native right-to-left editing. Familiar logic, expressed in an entirely different direction.</p><a href="#studio" class="text-link">EXPERIENCE THE EDITOR <span>↗</span></a></div></div></section>
- <section class="studio-section" id="studio"><div class="wrap"><div class="section-meta"><span>02 / INTERACTIVE PLAYGROUND</span><span>LIVE IN YOUR BROWSER</span></div><div class="studio-heading"><div><div class="eyebrow">A NEW PERSPECTIVE ON CODE</div><h2>MEET YOUR<br>NEW WORKSPACE<span class="period">.</span></h2></div><p>Not a screenshot. A working interpreter. Type your program in Hebrew and see the result instantly.</p></div>
- <div class="workspace" id="workspace">
-  <div class="window-top"><div class="window-brand"><img src="assets/ivrit-mark.png" alt=""><span>IVRIT / STUDIO</span><span class="window-version">v0.2</span></div><div class="window-actions"><button class="tool-btn" id="openFile" title="Import .ivrit file">↥ <span>IMPORT</span></button><button class="tool-btn" id="downloadFile" title="Download .ivrit file">↧ <span>EXPORT</span></button><button class="run-btn" id="runCode">▶ <span>RUN CODE</span></button></div></div>
-  <div class="workspace-content">
-   <aside class="files-panel"><div class="panel-caption">EXPLORER <span>⋯</span></div><div class="project-title">⌄ &nbsp; IVRIT PROJECT</div><button class="file-entry selected" id="fileEntry"><span>◇</span> <b dir="rtl">ראשי.ivrit</b></button><div class="panel-filler"><span>01 / SOURCE FILE</span><div class="file-note">Every line begins on the right.<br>Every possibility is open.</div></div><div class="panel-footer">●&nbsp; LOCAL SESSION</div></aside>
-   <div class="code-panel"><div class="tab-bar"><div class="active-tab"><span class="tab-indicator"></span><span dir="rtl">ראשי.ivrit</span> <small>×</small></div><select id="sampleSelect" aria-label="Code examples"><option value="welcome">01 / HELLO WORLD</option><option value="loop">02 / LOOPS</option><option value="function">03 / FUNCTIONS</option><option value="math">04 / MATH</option></select></div>
-    <div class="code-editor"><div class="code-overlay" aria-hidden="true"><pre id="highlight" dir="rtl"></pre></div><textarea id="code" dir="rtl" lang="he" spellcheck="false" autocapitalize="off" autocomplete="off" aria-label="Hebrew code editor"></textarea><div class="line-numbers" aria-hidden="true"><pre id="numbers"></pre></div></div>
-    <div class="editor-bottom"><span id="cursorInfo">LINE 1 : 1</span><span>UTF-8 &nbsp; / &nbsp; HEBREW RTL</span></div>
-   </div>
-   <div class="output-panel"><div class="terminal-head"><span>TERMINAL / פלט</span><button id="clearConsole">CLEAR ↗</button></div><div class="terminal-body" id="terminal" aria-live="polite"><div class="output-hint">Press Run Code or Ctrl + Enter</div></div><div class="terminal-status"><span class="status-dot"></span><span id="runStatus">READY TO EXECUTE</span></div></div>
-  </div>
- </div>
- <div class="studio-below"><span>TIP: <kbd>CTRL</kbd> + <kbd>ENTER</kbd> TO RUN YOUR CODE</span><button id="resetExample">RESTORE EXAMPLE ↺</button></div>
- </div></section>
+ <section class="statement wrap"><div class="section-meta"><span>01 / A NEW LANGUAGE</span><span>THE IDEA</span></div><div class="statement-body"><div class="big-aleph" aria-hidden="true">א</div><div><h2>GOOD IDEAS<br>DON'T ALWAYS<br><span>READ LEFT TO RIGHT.</span></h2><p>Ivrit is an experimental programming language with Hebrew keywords and native right-to-left editing. Familiar logic, expressed in an entirely different direction.</p><a href="studio.html" class="text-link">EXPERIENCE THE EDITOR <span>↗</span></a></div></div></section>
+ <section class="studio-section" id="studio"><div class="wrap"><div class="section-meta"><span>02 / THE STUDIO</span><span>YOUR NEXT WORKSPACE</span></div><div class="studio-heading"><div><div class="eyebrow">WRITE. RUN. CREATE.</div><h2>YOUR CODE.<br>YOUR DIRECTION<span class="period">.</span></h2></div><p>One click away from a dedicated Hebrew right-to-left development environment.</p></div><a href="studio.html" class="studio-preview" aria-label="Launch Ivrit Studio editor"><div class="preview-top"><span>IVRIT / STUDIO</span><span>● LIVE EDITOR</span><span>OPEN WORKSPACE ↗</span></div><div class="preview-grid"><div class="preview-code" dir="rtl" lang="he"><span class="preview-comment"># התוכנית הראשונה שלי</span><span>הגדר שם להיות "עולם"</span><span></span><span>הדפס "שלום, " + שם + "!"</span><span></span><span>אם גיל גדול_מ 18 אז</span><span>　הדפס "ברוכים הבאים"</span><span>סוף</span></div><div class="preview-terminal"><small>CONSOLE / פלט</small><div dir="rtl" lang="he">› שלום, עולם!</div><div class="preview-success">● EXECUTION COMPLETE</div></div></div><div class="preview-bottom">HEBREW RTL CODE / BROWSER INTERPRETER <strong>LAUNCH STUDIO ↗</strong></div></a><div class="studio-below"><span>A DEDICATED EDITOR, SEPARATE FROM THE HOMEPAGE</span><a href="studio.html" class="text-link">START CODING ↗</a></div></div></section>
  <section class="features wrap" id="features"><div class="section-meta"><span>03 / THE ESSENTIALS</span><span>BUILT DIFFERENT</span></div><h2>ONE DIRECTION.<br>INFINITE IDEAS<span class="period">.</span></h2><div class="feature-grid"><article><div class="feature-symbol">↤</div><div class="feature-number">01</div><h3>RIGHT TO LEFT.</h3><p>A native RTL code surface, created for the flow of Hebrew rather than fighting against it.</p></article><article><div class="feature-symbol">א</div><div class="feature-number">02</div><h3>HEBREW FIRST.</h3><p>Variables, conditions, loops, functions and expressions with Hebrew-language keywords.</p></article><article><div class="feature-symbol">▷</div><div class="feature-number">03</div><h3>INSTANT OUTPUT.</h3><p>Write and execute directly in your browser. No installs, no setup, no waiting.</p></article><article><div class="feature-symbol">⌘</div><div class="feature-number">04</div><h3>YOUR CODE.</h3><p>Save your experiments as .ivrit files and keep working on your own terms.</p></article></div></section>
- <section class="end-section" id="about"><div class="wrap end-inner"><div class="end-meta">04 / THE FUTURE IS UNWRITTEN</div><div class="huge-line" lang="he" dir="rtl">שלום, עולם.</div><div class="end-row"><div><h2>THE NEXT LINE<br>IS YOURS.</h2><p>An independent experiment in what programming can look like.</p></div><a href="#studio" class="end-cta">OPEN THE STUDIO <span>↗</span></a></div></div></section>
+ <section class="end-section" id="about"><div class="wrap end-inner"><div class="end-meta">04 / THE FUTURE IS UNWRITTEN</div><div class="huge-line" lang="he" dir="rtl">שלום, עולם.</div><div class="end-row"><div><h2>THE NEXT LINE<br>IS YOURS.</h2><p>An independent experiment in what programming can look like.</p></div><a href="studio.html" class="end-cta">OPEN THE STUDIO <span>↗</span></a></div></div></section>
 </main>
-<footer><a class="footer-brand" href="#top"><img src="assets/ivrit-mark.png" alt=""> IVRIT / STUDIO</a><span>WRITE IN A DIFFERENT DIRECTION.</span><span>© 2026 IVRIT STUDIO · EXPERIMENTAL</span></footer>
-<input id="fileInput" type="file" accept=".ivrit,.txt,text/plain" hidden>
-<script src="interpreter.js"></script><script src="app.js"></script>
+<footer><a class="footer-brand" href="#top"><img src="assets/ivrit-mark.png" alt=""> IVRIT / STUDIO</a><span>WRITE IN A DIFFERENT DIRECTION.</span><span><a href="learn.html">ACADEMY</a> &nbsp;·&nbsp; <a href="docs.html">DOCS</a> &nbsp;·&nbsp; © 2026 IVRIT STUDIO</span></footer>
+
+<script src="home.js"></script>
 </body>
 </html>

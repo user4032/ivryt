@@ -1,0 +1,25 @@
+<!doctype html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Documentation — Ivrit Studio</title><link rel="icon" href="/assets/favicon-OKmTuA1f.png">  <link rel="stylesheet" crossorigin href="/assets/workspace-Dp0O9DZV.css">
+</head><body class="page"><header class="top"><a href="index.html" class="logo"><img src="/assets/ivrit-mark-CF-OKllb.png" alt=""><strong>IVRIT<span>/</span>STUDIO</strong></a><div class="top-links"><a href="index.html">HOME</a><a href="studio.html">STUDIO</a><a href="learn.html">ACADEMY</a></div><div class="controls"><a class="sidebtn" href="studio.html">OPEN STUDIO ↗</a></div></header><main class="page-main"><div class="kicker">DEVELOPER RESOURCES / 001</div><h1>LANGUAGE<br>REFERENCE.</h1><p class="lead">Ivrit — експериментальна мова програмування. Повний довідник поточного синтаксису, приклади та пояснення українською.</p><div class="docs-wrap"><aside class="docs-side"><a href="#basics">01 / BASICS</a><a href="#logic">02 / LOGIC & FUNCTIONS</a><a href="#data">03 / ARRAYS & OBJECTS</a><a href="#modules">04 / MODULES</a><a href="#words">05 / DICTIONARY</a><a href="#limits">06 / LIMITATIONS</a></aside><div class="docs-content"><section id="basics"><h2>01 / Basics</h2><p>Кожна команда починається з нового рядка. Усі назви змінних можуть бути івритом. Коментар починається з #. Рядки можна писати в подвійних чи одинарних лапках.</p><pre>הגדר שם להיות "דניס"
+הגדר גיל להיות 20
+הדפס "שלום, " + שם
+הדפס גיל כפול 2</pre></section><section id="logic"><h2>02 / Conditions, loops, functions</h2><p>Блоки закінчуються словом סוף; івритські оператори порівняння підтримують логічні сполучення.</p><pre>אם גיל גדול_או_שווה 18 אז
+  הדפס "מבוגר"
+אחרת
+  הדפס "צעיר"
+סוף
+
+פונקציה ריבוע(x)
+  החזר x כפול x
+סוף
+
+הדפס ריבוע(4)</pre></section><section id="data"><h2>03 / Data structures</h2><p>Масиви мають індекси, що починаються з 0. Об’єкти підтримують ключі та доступ через крапку. Підтримуються вкладені значення.</p><pre>הגדר רשימה להיות [10, 20, 30]
+רשימה[0] = 15
+הוסף(רשימה, 40)
+הדפס אורך(רשימה)
+
+הגדר אדם להיות {שם: "נועה", גיל: 19}
+אדם.גיל = 20
+הדפס אדם.שם</pre></section><section id="modules"><h2>04 / Modules</h2><p>Створи файл utils.ivrit у Project Explorer. Імпорт виконує цей файл один раз і робить його функції та глобальні змінні доступними для головного файлу. Циклічний імпорт заборонено.</p><pre>ייבא "utils.ivrit"
+הדפס כפול_שניים(21)</pre><p>У файлі utils.ivrit:</p><pre>פונקציה כפול_שניים(x)
+  החזר x כפול 2
+סוף</pre></section><section id="words"><h2>05 / Dictionary</h2><p>Команди, короткі пояснення й приклади (іврит → українська).</p><table class="word-table" id="word-table"></table></section><section id="limits"><h2>06 / Current limits</h2><p>Ivrit v0.4 працює як браузерний інтерпретатор, без прямого доступу до файлів комп’ютера, мережі, системних команд або DOM. Модулі зберігаються в проєкті. Є захист від довгих циклів, але це не сертифікована ізоляція для виконання недовірених програм. Для публічного мультикористувацького сервісу потрібен окремий sandbox/worker.</p><p>CodeMirror 6 завантажується з CDN. Якщо CDN недоступний, Studio відкриває спрощений RTL-редактор із виконанням програм, але без просунутих підказок.</p></section></div></div></main><script src="samples.js"></script><script>const t=document.getElementById('word-table');for(const [word,meaning,example] of IVRIT_WORDS){let row=t.insertRow();for(let str of [word,meaning,example]){let c=row.insertCell();c.textContent=str;}row.cells[2].style.direction='rtl'}</script></body></html>

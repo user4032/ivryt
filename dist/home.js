@@ -1,0 +1,1 @@
+"use strict";const toggle=document.getElementById("menuToggle");const menu=document.getElementById("mobileNav");toggle.addEventListener("click",()=>{menu.hidden=!menu.hidden;toggle.setAttribute("aria-expanded",String(!menu.hidden))});menu.querySelectorAll("a").forEach(a=>a.addEventListener("click",()=>{menu.hidden=true;toggle.setAttribute("aria-expanded","false")}));

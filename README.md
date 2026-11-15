@@ -1,4 +1,4 @@
-# Ivrit Studio v0.4
+# Ivrit Studio v0.5
 
 An experimental Hebrew-language programming IDE with an original monochrome landing page, a separate CodeMirror 6 right-to-left Studio, interactive lessons, documentation, and a safe browser-side AST interpreter.
 
@@ -77,3 +77,10 @@ Blocks use `אם … אז` / `אחרת` / `סוף`, `כל_עוד … עשה` / `
 - Open the development server with `npm run dev` instead of opening `studio.html` through `file://` (browser module security restrictions). The runtime can fall back to a basic RTL `<textarea>` if the CodeMirror module fails to initialize.
 
 The ZIP is a **source project**. Vercel builds and serves the result from `dist`.
+
+
+## v0.5 fixes
+- Reworked header branding and wordmark spacing.
+- Added a proper monochrome hero product image to the homepage.
+- Improved top bar responsiveness on Studio / Academy / Docs.
+- Preserved the existing RTL editor, parser, Academy and docs.

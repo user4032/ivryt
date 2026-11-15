@@ -1,4 +1,4 @@
-/* Ivrit language runtime v0.4. Safe interpreter (no eval/new Function). */
+/* Ivrit language runtime v0.5. Safe interpreter (no eval/new Function). */
 (function(root,factory){const api=factory();if(typeof module==='object'&&module.exports)module.exports=api;root.Ivrit=api;})(typeof globalThis!=='undefined'?globalThis:this,function(){
 'use strict';
 class IvritError extends Error {constructor(message,line=1,file='main.ivrit',col=1){super(message);this.name='IvritError';this.line=line;this.file=file;this.col=col;}}
